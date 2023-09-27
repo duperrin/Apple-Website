@@ -1,3 +1,55 @@
-header nav > div > h1 > a > img{
-  width: 20px;
+header nav {
+  width: 100%;
+  background: var(--main);
 }
+header nav div.center {
+  width: 1050px;
+  margin: 0 auto;
+}
+header nav div.center ul.header-main-ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+header nav div.center ul.header-main-ul li.logo img {
+  width: 40px;
+}
+header nav div.center ul.header-main-ul li a {
+  font-size: 0.8em;
+}
+header nav div.center ul.header-main-ul li i {
+  font-size: 1.2em;
+}
+div.sub-nav {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100vw;
+  background: var(--subMenu);
+}
+div.sub-nav div.sub-nav-center {
+  display: flex;
+  width: 1050px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 20px;
+}
+div.sub-nav div.sub-nav-center ul {
+  padding-right: 70px;
+}
+div.sub-nav div.sub-nav-center ul:first-child li:not(:first-child) {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+div.sub-nav div.sub-nav-center ul li {
+  margin-bottom: 8px;
+}
+div.sub-nav div.sub-nav-center ul li:first-child {
+  font-size: 0.8em;
+  color: #6E6E73;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=header.css.map */

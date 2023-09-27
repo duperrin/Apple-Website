@@ -10,6 +10,10 @@
   word-break:keep-all ;
 }
 
+body{
+  font-family: 'NEXON Lv1 Gothic OTF';
+}
+
 li {
   list-style: none;
 }
