@@ -1,1 +1,1 @@
-import { qs } from "./function";
+import { qs, qsAll } from "./function.js";

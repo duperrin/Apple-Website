@@ -9,11 +9,11 @@ header nav{
     ul.header-main-ul{
       display: flex;
       align-items: center;
+      justify-content: space-between;
       width: 100%;
       height: 45px;
-      justify-content: space-between;
-      box-sizing: border-box;
       padding: 0 20px;
+      box-sizing: border-box;
       li{
         &.logo{
           img{
@@ -39,6 +39,9 @@ div.sub-nav{
   top: 45px;
   left: 0;
   width: 100vw;
+  max-height: 0;
+  transition: max-height 1s;
+  overflow: hidden;
   background: var(--subMenu);
   div.sub-nav-center{
     display: flex;
@@ -48,22 +51,31 @@ div.sub-nav{
     padding: 50px 20px;
     ul{
       padding-right: 70px;
-      &:first-child{
-        li{
-          &:not(:first-child){
-            font-size: 1.6em;
-            font-weight: bold;
-          }
-        }
-      }
       li{
         margin-bottom: 8px;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: all .7s;
+        &.emphasized{
+          font-size: 1.6em;
+          font-weight: bold;
+        }
         &:first-child{
           font-size: .8em;
           color: #6E6E73;
           margin-bottom: 15px;
         }
       }
+    }
+  }
+}
+
+ul.header-main-ul > li:hover {
+  div.sub-nav {
+    max-height: 100vh;
+    li{
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

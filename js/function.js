@@ -1,7 +1,11 @@
 export const qs = (container) => {
-  document.querySelector(container)
-}
+  return document.querySelector(container)
+};
 
 export const qsAll = (container) => {
-  document.querySelectorAll(container)
-}
+  return document.querySelectorAll(container)
+};
+
+export const slideToggle = () => {
+  
+};
