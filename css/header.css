@@ -1,12 +1,13 @@
-header nav {
+header nav.header-nav {
   width: 100%;
   background: var(--main);
 }
-header nav div.center {
+header nav.header-nav div.center {
+  position: relative;
   width: 1050px;
   margin: 0 auto;
 }
-header nav div.center ul.header-main-ul {
+header nav.header-nav div.center ul.header-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,55 +16,118 @@ header nav div.center ul.header-main-ul {
   padding: 0 20px;
   box-sizing: border-box;
 }
-header nav div.center ul.header-main-ul li.logo img {
-  width: 40px;
+header nav.header-nav div.center ul.header-main > li {
+  padding: 0 19px;
+  height: inherit;
 }
-header nav div.center ul.header-main-ul li a {
+header nav.header-nav div.center ul.header-main > li h1 {
+  height: inherit;
+}
+header nav.header-nav div.center ul.header-main > li h1 img {
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+}
+header nav.header-nav div.center ul.header-main > li a.main-menu-a,
+header nav.header-nav div.center ul.header-main > li button.main-menu-btn {
+  display: inline-block;
+  height: inherit;
+  line-height: 45px;
   font-size: 0.8em;
 }
-header nav div.center ul.header-main-ul li i {
+header nav.header-nav div.center ul.header-main > li > i {
   font-size: 1.2em;
 }
-div.sub-nav {
+
+div.sub-background {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--subMenu);
+  transition: height 0.3s;
+}
+
+div.sub-nav-center {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
   top: 45px;
   left: 0;
-  width: 100vw;
-  max-height: 0;
-  transition: max-height 1s;
-  overflow: hidden;
-  background: var(--subMenu);
-}
-div.sub-nav div.sub-nav-center {
-  display: flex;
   width: 1050px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
-div.sub-nav div.sub-nav-center ul {
+div.sub-nav-center.click-sub-nav-center {
+  display: block;
+}
+div.sub-nav-center ul {
   padding-right: 70px;
 }
-div.sub-nav div.sub-nav-center ul li {
-  margin-bottom: 8px;
-  transform: translateY(-10px);
+div.sub-nav-center ul li {
+  margin-bottom: 10px;
+  transform: translateY(-5px);
   opacity: 0;
-  transition: all 0.7s;
+  transition: all 0.3s;
+  font-size: 0.8em;
 }
-div.sub-nav div.sub-nav-center ul li.emphasized {
-  font-size: 1.6em;
+div.sub-nav-center ul li.emphasized {
+  font-size: 1.3em;
   font-weight: bold;
 }
-div.sub-nav div.sub-nav-center ul li:first-child {
-  font-size: 0.8em;
+div.sub-nav-center ul li:first-child {
   color: #6E6E73;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+div.sub-nav-center ul li.last-em {
+  margin-bottom: 30px;
+}
+div.sub-nav-center ul li.quick-link {
+  padding: 3px 2px;
+}
+div.sub-nav-center ul li.quick-link:hover {
+  font-weight: bold;
+  background: var(--main);
+}
+div.sub-nav-center form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+div.sub-nav-center form > i,
+div.sub-nav-center form input {
+  transform: translateY(-5px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+div.sub-nav-center form i {
+  color: #6E6E73;
+}
+div.sub-nav-center form input {
+  flex: auto;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.5em;
+  background: var(--subMenu);
+}
+div.sub-nav-center form input::-moz-placeholder {
+  font-weight: bold;
+}
+div.sub-nav-center form input::placeholder {
+  font-weight: bold;
 }
 
-ul.header-main-ul > li:hover div.sub-nav {
-  max-height: 100vh;
+ul.header-main > li.active div.sub-nav-center {
+  visibility: visible;
 }
-ul.header-main-ul > li:hover div.sub-nav li {
+ul.header-main > li.active div.sub-nav-center li,
+ul.header-main > li.active div.sub-nav-center form > i,
+ul.header-main > li.active div.sub-nav-center input {
   transform: translateY(0);
   opacity: 1;
 }/*# sourceMappingURL=header.css.map */

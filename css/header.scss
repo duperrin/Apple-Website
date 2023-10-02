@@ -1,12 +1,13 @@
 @use 'mixin' as m;
 
-header nav{
+header nav.header-nav{
   width: 100%;
   background: var(--main);
   div.center{
+    position: relative;
     width: 1050px;
     margin: 0  auto;
-    ul.header-main-ul{
+    ul.header-main{
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -14,66 +15,119 @@ header nav{
       height: 45px;
       padding: 0 20px;
       box-sizing: border-box;
-      li{
-        &.logo{
+      >li{
+        padding: 0 19px;
+        height: inherit;
+        h1{
+          height: inherit;
           img{
+            display: inline-block;
             width: 40px;
+            vertical-align: middle;//inline이나 inline-block에만 적용됨
           }
         }
-        a{
+        a.main-menu-a,
+        button.main-menu-btn{
+          display: inline-block;
+          height: inherit;
+          line-height: 45px;
           font-size: .8em;
         }
-        i{
+        >i{
           font-size: 1.2em;
         }
       }
     }
   }
-  @media #{m.$max-lg} {
-    //div.center{}
-  }
 }
 
-div.sub-nav{
+div.sub-background{
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--subMenu);
+  transition: height .3s;
+}
+
+div.sub-nav-center{
+  visibility: hidden; //transition효과가 적용되려면 visibility 속성 이용
+  position: absolute;
+  display: flex;
   top: 45px;
   left: 0;
-  width: 100vw;
-  max-height: 0;
-  transition: max-height 1s;
-  overflow: hidden;
-  background: var(--subMenu);
-  div.sub-nav-center{
-    display: flex;
-    width: 1050px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 50px 20px;
-    ul{
-      padding-right: 70px;
-      li{
-        margin-bottom: 8px;
-        transform: translateY(-10px);
-        opacity: 0;
-        transition: all .7s;
-        &.emphasized{
-          font-size: 1.6em;
+  width: 1050px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  &.click-sub-nav-center{
+    display: block;
+  }
+  ul{
+    padding-right: 70px;
+    li{
+      margin-bottom: 10px;
+      transform: translateY(-5px);
+      opacity: 0;
+      transition: all .3s;
+      font-size: .8em;
+      &.emphasized{
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      &:first-child{
+        color: #6E6E73;
+        margin-bottom: 20px;
+      }
+      &.last-em{
+        margin-bottom: 30px;
+      }
+      &.quick-link{
+        padding: 3px 2px;
+        &:hover{
           font-weight: bold;
+          background: var(--main);
         }
-        &:first-child{
-          font-size: .8em;
-          color: #6E6E73;
-          margin-bottom: 15px;
-        }
+      }
+    }
+  }
+  form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    >i,
+    input{
+      transform: translateY(-5px);
+      opacity: 0;
+      transition: all .3s;
+    }
+    i{
+      color: #6E6E73;
+    }
+    input{
+      flex: auto;
+      height: 40px;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      font-size: 1.5em;
+      background: var(--subMenu);
+      &::placeholder{
+        font-weight: bold;
       }
     }
   }
 }
 
-ul.header-main-ul > li:hover {
-  div.sub-nav {
-    max-height: 100vh;
-    li{
+//nav sub menu hover
+ul.header-main > li.active{
+  div.sub-nav-center{
+    visibility: visible; //transition효과가 적용되려면 visibility 속성 이용
+    li,
+    form >i,
+    input{
       transform: translateY(0);
       opacity: 1;
     }
