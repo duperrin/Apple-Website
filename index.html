@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <script src="https://kit.fontawesome.com/f8f8eb5703.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./js/header.js" type="module"></script>
   <script src="./js/function.js" type="module"></script>
+  <script src="./js/home.js" type="module"></script>
   <title>Apple Store 온라인 - Apple (KR)</title>
 </head>
 <body>
   <header>
     <nav class="header-nav">
-
+      
       <div class="sub-background"></div>
 
       <div class="center">
@@ -391,22 +394,90 @@
         <span class="sub-desc">좋아하는 Apple 제품을 구입하는 가장 좋은 방법.</span>
       </div>
       <div class="help">
-        <div class="inquiry">
+        <div class="sub-help">
           <img src="./img/store-chat-specialist-icon.jpg" alt="">
-          <div class="inquiry-sub">
-            <div class="inquiry-sub-1">
+          <div class="sub-help-row">
+            <div class="sub-help-row-desc">
               쇼핑 지원이 필요하다면?
             </div>
-            <div class="inquiry-sub-2">
+            <div>
               <a href="#">
                 스페셜리스트에게 문의하세요
               </a>
             </div>
           </div>
         </div>
-        <div class="offline-shop">
-          <!-- <img src="./img/apple-logo2.png" alt=""> -->
+        <div class="sub-help">
+          <img src="./img/apple-logo2.png" alt="">
+          <div class="sub-help-row">
+            <div class="sub-help-row-desc">
+              Apple Store를 방문하세요
+            </div>
+            <div>
+              <a href="#">
+                가까운 매장 찾기 >
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="goods-section">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-1.png" alt="">
+              <figcaption>Mac</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-2.png" alt="">
+              <figcaption>iPhone</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-3.png" alt="">
+              <figcaption>iPad</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-4.png" alt="">
+              <figcaption>Apple Watch</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-5.png" alt="">
+              <figcaption>AirPods</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-6.png" alt="">
+              <figcaption>AirTag</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-7.png" alt="">
+              <figcaption>Apple TV 4K</figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="./img/goods-8.png" alt="">
+              <figcaption>액세서리</figcaption>
+            </figure>
+          </div>
+        </div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
   </main>

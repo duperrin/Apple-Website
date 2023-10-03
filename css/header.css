@@ -2,6 +2,9 @@ header nav.header-nav {
   width: 100%;
   background: var(--main);
 }
+header nav.header-nav * {
+  z-index: 100;
+}
 header nav.header-nav div.center {
   position: relative;
   width: 1050px;

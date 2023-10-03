@@ -1,3 +1,6 @@
+-------------------------------------------------
+header
+
 input del btn 
 1. transition 적용
 2. mouseleave 혹은 li active 제거 시 바로 숨기기
@@ -7,3 +10,7 @@ nav
 
 https://blogpack.tistory.com/850
 반투명 적용법
+-------------------------------------------------
+goods-section
+
+navigation 버튼 display 설정
