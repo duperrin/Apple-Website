@@ -1,0 +1,51 @@
+div.notice-div {
+  width: 100%;
+  height: 75px;
+  background: green;
+}
+
+.sub.title,
+.sub-desc {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.sub-title {
+  color: #222;
+}
+
+.sub-desc {
+  color: #666;
+}
+
+section.title-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+section.title-section div.title {
+  width: 60%;
+}
+section.title-section div.title h1.sub-title,
+section.title-section div.title span.sub-desc {
+  font-size: 2.5em;
+}
+section.title-section div.title h1.sub-title {
+  display: inline-block;
+}
+section.title-section div.help div.inquiry {
+  display: flex;
+}
+section.title-section div.help div.inquiry img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+section.title-section div.help div.inquiry div.inquiry-sub {
+  font-size: 0.8em;
+}
+section.title-section div.help div.inquiry div.inquiry-sub div.inquiry-sub-1 {
+  margin-bottom: 5px;
+}/*# sourceMappingURL=home.css.map */

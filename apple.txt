@@ -1,0 +1,9 @@
+input del btn 
+1. transition 적용
+2. mouseleave 혹은 li active 제거 시 바로 숨기기
+
+nav
+1.settimeout 적용?(메뉴 바로 띄우지 않기)
+
+https://blogpack.tistory.com/850
+반투명 적용법

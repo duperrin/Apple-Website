@@ -1,0 +1,51 @@
+div.notice-div{
+  width: 100%;
+  height: 75px;
+  background: green;
+}
+
+.sub.title,
+.sub-desc{
+  font-weight: bold;
+  font-size: 2em;
+}
+.sub-title{
+  color: #222;
+}
+.sub-desc{
+  color: #666;
+}
+
+section.title-section{
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 80px 0;
+  div.title{
+    width: 60%;
+    h1.sub-title,
+    span.sub-desc{
+      font-size: 2.5em;
+    }
+    h1.sub-title{
+      display: inline-block;
+    }
+  }
+  div.help{
+    div.inquiry{
+      display: flex;
+      img{
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+      }
+      div.inquiry-sub{
+        font-size: .8em;
+        div.inquiry-sub-1{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

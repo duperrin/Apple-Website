@@ -13,7 +13,6 @@ header nav.header-nav{
       justify-content: space-between;
       width: 100%;
       height: 45px;
-      padding: 0 20px;
       box-sizing: border-box;
       >li{
         padding: 0 19px;
@@ -63,6 +62,36 @@ div.sub-nav-center{
   padding: 40px 20px;
   &.click-sub-nav-center{
     display: block;
+    div.shopping-list{
+      em,
+      small{
+        transform: translateY(-5px);
+        opacity: 0;
+        transition: all .3s;
+      }
+      em{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1.3em;
+      }
+      small{
+        display: block;
+        margin-bottom: 30px;
+        font-size: .8em;
+        color: #888;
+        a{
+          color: rgb(0, 0, 255);
+          text-decoration: underline;
+        }
+      }
+    }
+    li{
+      font-size: .7em;
+
+      i{
+        margin-right: 5px;
+      }
+    }
   }
   ul{
     padding-right: 70px;
@@ -127,7 +156,9 @@ ul.header-main > li.active{
     visibility: visible; //transition효과가 적용되려면 visibility 속성 이용
     li,
     form >i,
-    input{
+    input,
+    em,
+    small{
       transform: translateY(0);
       opacity: 1;
     }

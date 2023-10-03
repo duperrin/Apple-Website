@@ -13,7 +13,6 @@ header nav.header-nav div.center ul.header-main {
   justify-content: space-between;
   width: 100%;
   height: 45px;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 header nav.header-nav div.center ul.header-main > li {
@@ -62,6 +61,33 @@ div.sub-nav-center {
 }
 div.sub-nav-center.click-sub-nav-center {
   display: block;
+}
+div.sub-nav-center.click-sub-nav-center div.shopping-list em,
+div.sub-nav-center.click-sub-nav-center div.shopping-list small {
+  transform: translateY(-5px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+div.sub-nav-center.click-sub-nav-center div.shopping-list em {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+div.sub-nav-center.click-sub-nav-center div.shopping-list small {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  color: #888;
+}
+div.sub-nav-center.click-sub-nav-center div.shopping-list small a {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+}
+div.sub-nav-center.click-sub-nav-center li {
+  font-size: 0.7em;
+}
+div.sub-nav-center.click-sub-nav-center li i {
+  margin-right: 5px;
 }
 div.sub-nav-center ul {
   padding-right: 70px;
@@ -127,7 +153,9 @@ ul.header-main > li.active div.sub-nav-center {
 }
 ul.header-main > li.active div.sub-nav-center li,
 ul.header-main > li.active div.sub-nav-center form > i,
-ul.header-main > li.active div.sub-nav-center input {
+ul.header-main > li.active div.sub-nav-center input,
+ul.header-main > li.active div.sub-nav-center em,
+ul.header-main > li.active div.sub-nav-center small {
   transform: translateY(0);
   opacity: 1;
 }/*# sourceMappingURL=header.css.map */

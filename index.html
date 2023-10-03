@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/home.css">
   <script src="https://kit.fontawesome.com/f8f8eb5703.js" crossorigin="anonymous"></script>
   <script src="./js/header.js" type="module"></script>
   <script src="./js/function.js" type="module"></script>
@@ -363,7 +364,17 @@
           <li class="click-menu">
             <button type="button" class="main-menu-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></button>
             <div class="sub-nav-center click-sub-nav-center">
-
+              <div class="shopping-list">
+                <em>장바구니가 비어 있습니다.</em>
+                <small>저장해둔 항목이 있는지 확인하려면 <a href="#">로그인</a>하세요</small>
+              </div>
+              <ul>
+                <li>내 프로필</li>
+                <li><a href="#"><i class="fa-solid fa-box"></i>주문</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i>관심 목록</a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i>계정</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>로그인</a></li>
+              </ul>
             </div>
           </li>
 
@@ -373,6 +384,31 @@
   </header>
 
   <main>
+    <div class="notice-div"></div>
+    <section class="title-section">
+      <div class="title">
+        <h1 class="sub-title">스토어.</h1>
+        <span class="sub-desc">좋아하는 Apple 제품을 구입하는 가장 좋은 방법.</span>
+      </div>
+      <div class="help">
+        <div class="inquiry">
+          <img src="./img/store-chat-specialist-icon.jpg" alt="">
+          <div class="inquiry-sub">
+            <div class="inquiry-sub-1">
+              쇼핑 지원이 필요하다면?
+            </div>
+            <div class="inquiry-sub-2">
+              <a href="#">
+                스페셜리스트에게 문의하세요
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="offline-shop">
+          <!-- <img src="./img/apple-logo2.png" alt=""> -->
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

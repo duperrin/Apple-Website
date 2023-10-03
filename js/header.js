@@ -1,12 +1,12 @@
 import { qs, qsAll } from "./function.js";
 
-qsAll('li.hover-menu').forEach(li => {
+qsAll('li.hover-menu').forEach(li => {//쓰로틀링 혹은 디바운싱 필요
   li.addEventListener('mouseenter', e => {
     li.classList.add('active');
     let subMenuHeight = li.children[1].offsetHeight;
     const headerNavHeight = qs('ul.header-main').offsetHeight;
     qs('div.sub-background').style.height = subMenuHeight + headerNavHeight + 'px';
-  });
+});
 
   li.addEventListener('mouseleave', e => {
     li.classList.remove('active');
