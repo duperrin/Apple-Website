@@ -7,50 +7,55 @@ div.notice-div {
   height: 75px;
   background: #FFF;
 }
-div.notice-div div.notice-div-center {
+div.notice-div div.notice-swiper {
   position: relative;
   width: 1050px;
+  height: 75px;
   margin: 0 auto;
   overflow: hidden;
 }
-div.notice-div div.notice-div-center div.slide-wrapper {
+div.notice-div div.notice-swiper div.swiper-wrapper {
   display: flex;
+  height: 75px;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide {
+  height: 75px;
   flex-shrink: 0;
-  width: 1050px;
-  padding: 20px 0;
   font-size: 0.8em;
   text-align: center;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide div {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide.slide1 {
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide.slide2 {
+  line-height: 75px;
+}
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide div {
   margin-bottom: 5px;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide div sup {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide div sup {
   font-size: 0.8em;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide a {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide a {
   color: royalblue;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide a:hover {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide a:hover {
   text-decoration: underline;
 }
-div.notice-div div.notice-div-center div.slide-wrapper div.slide a::after {
+div.notice-div div.notice-swiper div.swiper-wrapper div.swiper-slide a::after {
   content: ">";
   font-size: 0.7em;
   margin-left: 3px;
 }
-div.notice-div div.notice-div-center button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.8em;
+div.notice-div div.notice-swiper div.swiper-button-prev,
+div.notice-div div.notice-swiper div.swiper-button-next {
+  color: #888;
 }
-div.notice-div div.notice-div-center button.next {
-  right: 0;
-}
-div.notice-div div.notice-div-center button.prev {
-  left: 0;
+div.notice-div div.notice-swiper div.swiper-button-prev:after,
+div.notice-div div.notice-swiper div.swiper-button-next:after {
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 .sub-title,
@@ -115,27 +120,23 @@ section.goods-section {
   width: 1050px;
   margin: 0 auto;
 }
-section.goods-section div.swiper {
+section.goods-section div.goods-swiper {
   width: 77vw;
   margin: 0 auto;
   overflow: visible;
 }
-section.goods-section div.swiper div.swiper-wrapper div.swiper-slide {
+section.goods-section div.goods-swiper div.swiper-wrapper div.swiper-slide {
   width: 150px;
 }
-section.goods-section div.swiper div.swiper-wrapper div.swiper-slide figure {
+section.goods-section div.goods-swiper div.swiper-wrapper div.swiper-slide figure {
   padding: 0 10px;
 }
-section.goods-section div.swiper div.swiper-wrapper div.swiper-slide figure img {
+section.goods-section div.goods-swiper div.swiper-wrapper div.swiper-slide figure img {
   width: 100%;
   margin-bottom: 20px;
 }
-section.goods-section div.swiper div.swiper-wrapper div.swiper-slide figure figcaption {
+section.goods-section div.goods-swiper div.swiper-wrapper div.swiper-slide figure figcaption {
   text-align: center;
   font-size: 0.8em;
   font-weight: bold;
-}
-section.goods-section div.swiper div.swiper-button-next,
-section.goods-section div.swiper div.swiper-button-prev {
-  display: none;
 }/*# sourceMappingURL=home.css.map */

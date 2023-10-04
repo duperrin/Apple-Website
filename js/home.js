@@ -1,9 +1,5 @@
-const swiper = new Swiper('.swiper', {
-  loop: false,
-  slidesPerView: auto,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-});
+import { qs, qsAll, setSwiper } from "./function.js";
+
+setSwiper('.notice-swiper',true,1,900);
+
+setSwiper('.goods-swiper',false,8)
